@@ -14,7 +14,7 @@ def format_text(file_path):
                 file.write('</p>\n')
             elif title.startswith('*') and title.endswith('*'):
                 file.write(f'<h1 style="color:{color};">\n')
-                file.write(title[1:-1])  # remove the asterisks
+                file.write(title[1:-1])
                 file.write('</h1>\n')
             else:
                 file.write('<p>\n')
@@ -22,5 +22,5 @@ def format_text(file_path):
                 file.write('</p>\n')
         file.write('</body></html>\n')
 
-format_text('doc.txt')
+format_text('Your File Path')
 
